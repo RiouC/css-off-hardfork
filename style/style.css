@@ -1,42 +1,45 @@
 :root {
-  --yellow: #eef13f;
-  --orange: #fe6638;
-  --green: #80b238;
-  --blue: #80c1d6;
+    --yellow: #eef13f;
+    --orange: #fe6638;
+    --green: #80b238;
+    --blue: #80c1d6;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background: var(--blue);
-  color: #fff;
-  font-family: Atma, sans-serif;
-  margin: 0;
-  font-size: 1.5rem;
+    background: var(--blue);
+    color: #fff;
+    font-family: Atma, sans-serif;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 h1,
 h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 h1,
 h2,
 h1 + p,
 button {
-  font-family: Bangers, sans-serif;
-  letter-spacing: 2px;
+    font-family: Bangers, sans-serif;
+    letter-spacing: 2px;
 }
 
 /* ... Your turn! ... */
 
+nav {
+    margin: 0;
+    background-color: var(--green);
+}
+
 nav > ul {
     display: flex;
     justify-content: space-around;
-    /* color: white; */
-    background-color: hsla(126 70% 43%);
     opacity: 0.7;
     list-style: none;
 }
