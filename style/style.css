@@ -60,46 +60,50 @@ nav > ul > li > a {
 }
 
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 header {
     text-shadow: 1px 1px 0 white;
     text-align: center;
     color: var(--orange);
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 article{
-  background-color:var(--green);
-  color:white;
-  text-align:center;
+    background-color:var(--green);
+    color:white;
+    text-align:center;
 }
 
 article a{
-color:white;
-text-decoration:none;
+    color:white;
+    text-decoration:none;
 }
 
 .obstacles{    
-  background-color: var(--orange);
+    background-color: var(--orange);
 }
 .obstacles-group article{
-  border-radius:10px;
+    border-radius:10px;
 }
 .prizes{
- background-color: var(--green);
+    background-color: var(--green);
 }
 .prizes-group article{
-  border: 1px dashed var(--yellow);
+    border: 1px dashed var(--yellow);
 }
 
 .prizes-group .grid {
@@ -107,18 +111,18 @@ text-decoration:none;
 }
 
 footer {
-  margin: auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--yellow);
-  color: black;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--yellow);
+    color: black;
 }
 
 @media (min-width: 640px) {
     .grid{
-    display:flex;
-    flex-direction:row;
-    gap: 1rem;
-    align-items: center;
+	display:flex;
+	flex-direction:row;
+	gap: 1rem;
+	align-items: center;
     }
 }
