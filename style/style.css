@@ -75,7 +75,7 @@ header {
 }
 
 header > p {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -119,8 +119,8 @@ article a{
 }
 
 label,input{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
@@ -155,4 +155,9 @@ footer {
 	gap: 1rem;
 	align-items: center;
     }
+
+    header > p {
+	font-size: 3rem;
+    }
+
 }
