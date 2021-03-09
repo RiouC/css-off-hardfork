@@ -32,15 +32,19 @@ button {
 
 /* ... Your turn! ... */
 
+body {
+    background: top no-repeat url("../img/blue-splash.png") var(--blue);
+}
+
 nav {
     margin: 0;
     background-color: var(--green);
+    opacity: 0.9;
 }
 
 nav > ul {
     display: flex;
     justify-content: space-around;
-    opacity: 0.7;
     list-style: none;
 }
 
@@ -54,8 +58,12 @@ nav > ul > li > a {
 }
 
 header {
-    background-image: url("../img/blue-splash.png");
+    
+    text-align: center;
+    color: var(--orange);
+    margin: auto;
 }
+
 
 @media (min-width: 640px) {
     flex-direction: row;
