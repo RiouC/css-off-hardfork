@@ -20,7 +20,7 @@ body {
 h1,
 h2 {
     margin-top: 0;
-   
+
 }
 
 h1,
@@ -69,24 +69,27 @@ header {
     color: var(--orange);
     margin: auto;
 }
-.obstacles{
-  background-color: var(--orange);
-}
-.prizes{
- background-color: var(--green);
-}
 
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
+
 article{
   background-color:var(--green);
   color:white;
+  text-align:center;
 }
-.obstacles{
+
+article a{
+color:white;
+text-decoration:none;
+}
+
+.obstacles{    
   background-color: var(--orange);
 }
 .obstacles-group article{
@@ -99,13 +102,23 @@ article{
   border: 1px dashed var(--yellow);
 }
 
+.prizes-group .grid {
+    align-items: stretch;
+}
+
 footer {
   margin: auto;
+  padding: 2rem;
   text-align: center;
   background-color: var(--yellow);
   color: black;
 }
 
 @media (min-width: 640px) {
-    sction{flex-direction: row;
+    .grid{
+    display:flex;
+    flex-direction:row;
+    gap: 1rem;
+    align-items: center;
+    }
 }
