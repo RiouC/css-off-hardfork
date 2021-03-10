@@ -20,7 +20,6 @@ body {
 h1,
 h2 {
     margin-top: 0;
-
 }
 
 h1,
@@ -80,6 +79,9 @@ header > p {
 
 h2 {
     text-align: center;
+    text-shadow: 2px 2px 0 #444;
+    //#cb532e;
+    //#67902e;
 }
 
 section {
@@ -89,6 +91,7 @@ section {
     align-items: center;
     padding: 2rem;
 }
+
 
 article{
     background-color:var(--green);
@@ -114,11 +117,44 @@ article a{
     border: 1px dashed var(--yellow);
 }
 
-.prizes-group .grid {
+
+/* .prizes-group .grid { */
+/*     align-items: stretch; */
+/* } */
+.grid { 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: stretch;
+    justify-content: center;
 }
 
-label,input{
+.grid > article {
+    border: 1px solid yellow;
+    /* flex: auto; */
+}
+
+article {
+    border: 1px solid blue;
+}
+
+.wrap {
+    border: 1px dotted yellow;
+    padding: 2rem;
+}
+.grid {
+    border: 1px dashed red;
+}
+
+
+/* .obstacles-group > article , .prizes-group > article { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     justify-content: center; */
+/*     align-items: stretch; */
+/* } */
+
+label,input {
     display: flex;
     flex-direction: column;
 }
@@ -149,7 +185,7 @@ footer {
 }
 
 @media (min-width: 640px) {
-    .grid{
+    .grid {
 	display:flex;
 	flex-direction:row;
 	gap: 1rem;
