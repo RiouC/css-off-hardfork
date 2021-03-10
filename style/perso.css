@@ -1,0 +1,270 @@
+:root {
+    --yellow: #eef13f;
+    --orange: #fe6638;
+    --green: #80b238;
+    --blue: #80c1d6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--blue);
+    color: #fff;
+    font-family: Atma, sans-serif;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h1 + p,
+button {
+    font-family: Bangers, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* ... Your turn! ... */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: top no-repeat url("../img/blue-splash.png") var(--blue);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 
+https://stackoverflow.com/questions/16909653/make-my-css-menu-stay-on-top-of-the-screen 
+*/
+nav {
+    background-color: var(--green);
+    margin: 0;
+    opacity: 0.8;
+    padding: 0.1rem;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    height: 2.5rem;
+}
+
+nav > ul > li {
+    text-transform: uppercase;
+    transition: rotate 1s;
+}
+
+nav > ul > li:nth-child(2n+1):hover {
+    rotate: 15deg;
+}
+
+nav > ul > li:nth-child(2n):hover {
+    rotate: -15deg;
+}
+
+a {
+    transition: font-size 1s;
+}
+
+nav a:hover {
+    font-size: 2rem;
+}
+
+
+h1 {
+    font-size: 6rem;
+}
+
+header {
+    text-shadow: 2px 2px 0 white;
+    text-align: center;
+    color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+header > p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    //#cb532e;
+    //#67902e;
+}
+
+h2, .grid {
+    text-align: center;
+}
+
+/* ------------------------------------- */
+
+
+#obstacles {
+    background-color: var(--orange);
+}
+
+#obstacles h2 {
+    text-shadow: 2px 2px 0 #cb532e;
+}
+
+#prizes {
+    background-color: var(--green);
+}
+
+#prizes h2 {
+    text-shadow: 2px 2px 0 #67902e;
+}
+
+#apply h2 {
+    text-shadow: 2px 2px 0 hsl(210 23% 56%);
+}
+
+footer {
+    background-color: var(--yellow);
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.wrap {
+    /* border: 1px dotted yellow; */
+    padding: 2rem;
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+article {
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.obstacles-group > article {
+    border-radius: 10px;
+    width: 17.5em;
+    height: 16.1em;
+    transition: all 0.5s;
+    /* transition: color 0.5s; */
+}
+
+.obstacles-group > article:hover {
+    background-color: var(--yellow);
+}
+
+.obstacles-group > article:hover * {
+    color: var(--orange);
+}
+
+.prizes-group > article {
+    border: 2px dashed var(--yellow);
+    width: 17.3em;
+    height: 20.3em;
+}
+
+.prizes-group > article img {
+    transition: rotate 2s;
+}
+.prizes-group > article:hover img {
+    rotate: 360deg;
+}
+
+#spacecamp {
+    padding-top: 2em;
+}
+
+/* ---------------------------------------- */
+
+label,input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    padding: 0.75rem;
+}
+
+button {
+    background-color: var(--yellow);
+    border-radius: 6px;
+    border: 0;
+    padding: 1rem 0.75rem;
+    margin-top: 0.75rem;
+    text-shadow: 2px 2px 0 #aaa;
+    text-align: left;
+    transition: all 0.5s;;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--green);
+}
+
+footer {
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--yellow);
+    color: black;
+}
+
+/* ---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+
+@media screen and (min-width: 1400px) {
+    .grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+	align-items: stretch;
+    }
+    header > p {
+	font-size: 3rem;
+    }
+}
